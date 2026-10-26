@@ -11,7 +11,7 @@
 
 ## 🚀 Live Demo
 
-👉 **[View Live Page]([https://YOUR_USERNAME.github.io/startupin-landing](https://startupin.buildingbrandsstartups.com/))**
+👉 **[View Live Page](https://startupin.buildingbrandsstartups.com/)**
 
 ---
 
