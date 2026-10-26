@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="scroll-smooth dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact / Submit Story | Startup in — Ideas. Insights. Impact.</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'dark-bg': '#0B0F19',
+            'dark-card': '#111726',
+            'brand-blue': '#3B82F6',
+            'brand-cyan': '#06B6D4',
+            'brand-accent': '#60A5FA',
+            'slate-muted': '#94A3B8',
+            'slate-subtle': '#64748B',
+            'border-glass': 'rgba(255, 255, 255, 0.08)'
+          },
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'] },
+          boxShadow: {
+            'glow-blue': '0 0 40px -10px rgba(59, 130, 246, 0.45)',
+            'glow-cyan': '0 0 40px -10px rgba(6, 182, 212, 0.35)',
+            'glass-card': '0 20px 40px -15px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.06)',
+            'glass-highlight': '0 0 0 1px rgba(59, 130, 246, 0.35), 0 16px 40px -12px rgba(59, 130, 246, 0.35)'
+          }
+        }
+      }
+    };
+</script>
+<style data-purpose="linear-vercel-styling">
+  body {font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background-color:#0B0F19; color:#F8FAFC; overflow-x:hidden;}
+  .linear-grid-bg {background-image:radial-gradient(rgba(255,255,255,0.07) 1px,transparent 1px); background-size:32px 32px;}
+  .glass-panel {background-color:rgba(17,23,38,0.72); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border:1px solid rgba(255,255,255,0.08);}
+  .glass-panel-hover {transition:all .3s cubic-bezier(.16,1,.3,1);}
+  .glass-panel-hover:hover {border-color:rgba(59,130,246,0.4); transform:translateY(-2px); box-shadow:0 20px 40px -15px rgba(59,130,246,0.2);}
+  .shimmer-badge {background:linear-gradient(90deg,rgba(59,130,246,0.12)0%,rgba(6,182,212,0.2)50%,rgba(59,130,246,0.12)100%); background-size:200% 100%; animation:shimmer 4s infinite linear;}
+  @keyframes shimmer {0%{background-position:100% 0}100%{background-position:-100% 0}}
+  #bgCanvas {position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:-1;}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-[#0B0F19] text-slate-100 antialiased selection:bg-brand-blue selection:text-white relative">
+<canvas id="bgCanvas"></canvas>
+<div class="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[450px] bg-blue-600/10 blur-[130px] rounded-full pointer-events-none -z-10"></div>
+<div class="fixed top-96 left-1/4 w-[600px] h-[350px] bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+<header class="sticky top-0 z-40 bg-[#0B0F19]/80 backdrop-blur-xl border-b border-white/[0.08] transition-all">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <a class="flex items-center gap-3.5 group" href="index.html">
+      <div class="p-1 rounded-xl bg-white/[0.04] border border-white/10 group-hover:border-blue-500/50 transition-colors">
+        <img alt="Startup in Logo" class="w-9 h-9 object-contain rounded-lg group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCruwY39pBVh5KmisBotiwy5hSijM82YA5zPnO4xk_CEzbbtMj0RzkLGq788W9utzTkjgJPCpyTuLTBJJZO5YOMCmvfbPPNrU_4W4jNzxKdP60_qEdXIga20AEiwVKdb8dvk4RP7PH03_rb-nfWOTXrf5wBLq5ZUrTPkzgsnyMPmVn4mNqasCavj-7iWoT3P4_vl065CFgqgXVclT7U4OmwZdEBq3YQUmrS8FN4z6cXEeLzi3Q95mPS7rPyNjZKJjbd00A"/>
+      </div>
+      <div class="flex flex-col"><div class="flex items-baseline gap-1"><span class="text-xl font-extrabold tracking-tight text-white">Startup</span><span class="text-xl font-extrabold text-blue-400">in</span></div><span class="text-[9px] uppercase tracking-[0.28em] font-bold text-slate-400">IDEAS. INSIGHTS. IMPACT.</span></div>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="stories.html" class="nav-link">Stories &amp; Insights</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link">Contact / Submit Story</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <button class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold shadow-glow-blue hover:shadow-lg transition-all transform active:scale-95 text-center border border-blue-400/30" onclick="openBookingModal('Tell Your Story')">Tell Your Story <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></button>
+      <button aria-label="Toggle menu" class="md:hidden text-slate-300 text-xl p-2 rounded-lg bg-white/5 border border-white/10" id="mobileMenuBtn"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+  <div class="hidden md:hidden border-t border-white/[0.08] bg-[#0E1320] px-6 py-4 space-y-3" id="mobileMenu">
+    <a class="block text-slate-300 font-medium hover:text-blue-400 py-1" href="index.html" onclick="toggleMobileMenu()">Home</a>
+    <a class="block text-slate-300 font-medium hover:text-blue-400 py-1" href="services.html" onclick="toggleMobileMenu()">Services</a>
+    <a class="block text-slate-300 font-medium hover:text-blue-400 py-1" href="stories.html" onclick="toggleMobileMenu()">Stories &amp; Insights</a>
+    <a class="block text-slate-300 font-medium hover:text-blue-400 py-1" href="about.html" onclick="toggleMobileMenu()">About Us</a>
+    <a class="block text-slate-300 font-medium hover:text-blue-400 py-1" href="contact.html" onclick="toggleMobileMenu()">Contact / Submit Story</a>
+    <button class="w-full mt-2 py-3 rounded-xl bg-blue-600 text-white font-semibold text-center shadow-glow-blue" onclick="openBookingModal('Mobile Nav CTA')">Tell Your Story</button>
+  </div>
+</header>
+<main class="max-w-4xl mx-auto px-4 py-12">
+  <section class="glass-panel rounded-3xl p-8 mb-8">
+    <h1 class="text-3xl font-extrabold text-white mb-4">Contact / Submit Your Story</h1>
+    <p class="text-slate-300 mb-6">Fill the form below and we’ll get back to you within 24 hours. All submissions are sent directly to our inbox via Web3Forms.</p>
+    <form class="space-y-4" id="contactForm" onsubmit="handleContactSubmit(event)">
+      <input type="hidden" name="access_key" value="d8d3c3a4-a386-4efa-99ac-67fbc0499f96"/>
+      <input type="hidden" name="subject" value="Contact Submission — Startup in"/>
+      <input type="hidden" name="cta_source" id="contactCtaSource" value=""/>
+      <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off"/>
+      <div>
+        <label class="block text-xs font-mono font-semibold text-slate-300 uppercase tracking-wider mb-1" for="fullName">Full Name</label>
+        <input class="w-full text-sm px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-white placeholder:text-slate-500" id="fullName" name="name" placeholder="e.g. Aditi Sharma" required type="text"/>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-xs font-mono font-semibold text-slate-300 uppercase tracking-wider mb-1" for="email">Email Address</label>
+          <input class="w-full text-sm px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-white placeholder:text-slate-500" id="email" name="email" placeholder="you@example.com" required type="email"/>
+        </div>
+        <div>
+          <label class="block text-xs font-mono font-semibold text-slate-300 uppercase tracking-wider mb-1" for="phone">Phone Number</label>
+          <input class="w-full text-sm px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-white placeholder:text-slate-500" id="phone" name="phone" placeholder="+91 98765 43210" type="tel"/>
+        </div>
+      </div>
+      <div>
+        <label class="block text-xs font-mono font-semibold text-slate-300 uppercase tracking-wider mb-1" for="service">Selected Service / Topic</label>
+        <select class="w-full text-sm px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-white" id="service" name="service" required>
+          <option value="" disabled selected>Select a service or topic</option>
+          <option value="LinkedIn Personal Branding">LinkedIn Personal Branding</option>
+          <option value="Founder Storytelling">Founder Storytelling</option>
+          <option value="Company Page Management">Company Page Management</option>
+          <option value="Carousel Design Systems">Carousel Design Systems</option>
+          <option value="Video &amp; Multimedia Storytelling">Video &amp; Multimedia Storytelling</option>
+          <option value="Case Studies &amp; Thought Leadership">Case Studies &amp; Thought Leadership</option>
+          <option value="General Inquiry">General Inquiry</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-xs font-mono font-semibold text-slate-300 uppercase tracking-wider mb-1" for="message">Message / Story</label>
+        <textarea class="w-full text-sm px-4 py-2.5 rounded-xl bg-white/[0.04] border border-white/10 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-white placeholder:text-slate-500" id="message" name="message" rows="4" placeholder="Tell us what you need or share your story..." required></textarea>
+      </div>
+      <div class="hidden items-center gap-2.5 p-3.5 rounded-xl bg-red-500/10 border border-red-500/20 text-red-300 text-xs font-medium" id="contactError"><i class="fa-solid fa-triangle-exclamation flex-shrink-0"></i><span id="contactErrorText"></span></div>
+      <button class="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-glow-blue transition-all border border-blue-400/30 disabled:opacity-60 disabled:cursor-not-allowed" id="contactSubmitBtn" type="submit">Send Message</button>
+    </form>
+    <div class="hidden text-center py-6 mt-4" id="contactSuccessMessage">
+      <div class="w-14 h-14 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-2xl mx-auto mb-3"><i class="fa-solid fa-check"></i></div>
+      <h4 class="text-lg font-bold text-white">Message Sent!</h4>
+      <p class="text-xs text-slate-300 mt-1 max-w-xs mx-auto">We’ll review your request and get back to you shortly.</p>
+      <button class="mt-4 px-6 py-2 rounded-xl bg-white/[0.08] text-white text-xs font-bold hover:bg-white/[0.14] transition-colors border border-white/10" onclick="resetContactForm()">Close</button>
+    </div>
+  </section>
+</main>
+<footer class="bg-[#080B12] text-white pt-12 pb-8 border-t border-white/[0.08]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="text-center text-xs text-slate-400">© <span id="currentYearFooter"></span> Startup in. All rights reserved.</p>
+  </div>
+</footer>
+<!-- Toast component (global) -->
+<div id="toast" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded-xl shadow-lg opacity-0 transition-opacity duration-300" role="alert"></div>
+<script data-purpose="interactive-actions">
+  // Year
+  document.getElementById('currentYearFooter').textContent = new Date().getFullYear();
+  // Mobile menu
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  function toggleMobileMenu(){ mobileMenu.classList.toggle('hidden'); }
+  if(mobileMenuBtn){ mobileMenuBtn.addEventListener('click', toggleMobileMenu); }
+  // Active nav highlighting
+  const path = window.location.pathname.split('/').pop();
+  document.querySelectorAll('.nav-link').forEach(a=>{ if(a.getAttribute('href')===path){ a.classList.add('text-blue-400','font-semibold'); } });
+  // Canvas background (simple particles)
+  const canvas = document.getElementById('bgCanvas');
+  const ctx = canvas.getContext('2d');
+  function resize(){ canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+  window.addEventListener('resize', resize); resize();
+  const particles = [];
+  for(let i=0;i<80;i++){
+    particles.push({x:Math.random()*canvas.width, y:Math.random()*canvas.height, r:Math.random()*2+1, vX:(Math.random()-0.5)*0.5, vY:(Math.random()-0.5)*0.5});
+  }
+  function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle='rgba(6,182,212,0.3)';
+    particles.forEach(p=>{ ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2); ctx.fill(); p.x+=p.vX; p.y+=p.vY; if(p.x<0||p.x>canvas.width) p.vX*=-1; if(p.y<0||p.y>canvas.height) p.vY*=-1; });
+    requestAnimationFrame(draw);
+  }
+  draw();
+  // GSAP scroll reveals (if any .reveal classes are added later)
+  gsap.utils.toArray('.reveal').forEach(el=>{
+    gsap.from(el,{opacity:0, y:50, duration:0.8, scrollTrigger:{trigger:el, start:'top 85%'}});
+  });
+  // Toast helper
+  function showToast(message, isError=false){ const toast = document.getElementById('toast'); toast.textContent = message; toast.style.background = isError ? '#dc2626' : '#2563eb'; toast.classList.remove('opacity-0'); toast.classList.add('opacity-100'); setTimeout(()=>{ toast.classList.remove('opacity-100'); toast.classList.add('opacity-0'); },3000); }
+  // Contact form submission
+  const contactForm = document.getElementById('contactForm');
+  const contactError = document.getElementById('contactError');
+  const contactErrorText = document.getElementById('contactErrorText');
+  const contactSubmitBtn = document.getElementById('contactSubmitBtn');
+  const contactSuccessMessage = document.getElementById('contactSuccessMessage');
+  const contactCtaSource = document.getElementById('contactCtaSource');
+  function openBookingModal(source){ if(contactCtaSource) contactCtaSource.value = source; }
+  async function handleContactSubmit(event){
+    event.preventDefault();
+    if(contactError){ contactError.classList.add('hidden'); contactError.classList.remove('flex'); }
+    contactSubmitBtn.disabled = true;
+    contactSubmitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin mr-2"></i>Sending…';
+    const formData = new FormData(contactForm);
+    try{
+      const resp = await fetch('https://api.web3forms.com/submit', { method:'POST', body:formData });
+      const data = await resp.json();
+      if(data.success){ contactForm.classList.add('hidden'); contactSuccessMessage.classList.remove('hidden'); }
+      else{ throw new Error(data.message || 'Submission failed'); }
+    }catch(err){
+      const msg = err && err.message ? err.message : 'Something went wrong. Please try again.';
+      if(contactErrorText) contactErrorText.textContent = msg;
+      if(contactError){ contactError.classList.remove('hidden'); contactError.classList.add('flex'); }
+      contactSubmitBtn.disabled = false;
+      contactSubmitBtn.innerHTML = 'Send Message';
+    }
+  }
+  function resetContactForm(){
+    contactForm.reset();
+    contactForm.classList.remove('hidden');
+    contactSuccessMessage.classList.add('hidden');
+    contactSubmitBtn.disabled = false;
+    contactSubmitBtn.innerHTML = 'Send Message';
+  }
+</script>
+</body></html>
